@@ -9,7 +9,7 @@ struct node
 
 }*root=NULL,*temp=NULL,*p;
 
-void insertend()
+void insert()
 {
 
 	temp=(struct node *)malloc(sizeof(struct node));
@@ -57,7 +57,7 @@ p=root;
   }
 }
 
-void deleteend(){
+void delete(){
 	if(count==0)
 	printf("The list is empty");
 	else if(count==1){
@@ -87,19 +87,19 @@ int main()
 int ch;
 	while(1)
 	{
-	printf("\n\nPLEASE ENTER YOUR CHOICE: \n1.INSERTEND\n2.DISPLAY\n3.DELETEEND\n4.EXIT");
+	printf("\n\nPLEASE ENTER YOUR CHOICE: \n1.INSERT\n2.DISPLAY\n3.DELETE\n4.EXIT");
 	scanf("%d",&ch);
 		switch(ch)
 		{
 			
 			case 1:
-					insertend();
+					insert();
 					break;
 			case 2:
 					display();
 					break;
 		        case 3:
-					deleteend();
+					delete();
 					break;
 		        default:
 					printf("\n\nTHANK YOU\n\n");
