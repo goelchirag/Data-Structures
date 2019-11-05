@@ -40,7 +40,7 @@ p=root;
 
   if(p==NULL)
   {
-         printf("\nTHE LINKED LIST ID EMPTY\n");
+         printf("\nTHE  QUEUE IS EMPTY\n");
   }
   else
   {
@@ -56,7 +56,7 @@ p=root;
 }
 void delete(){
 	if(count==0)
-		printf("\n The list is empty");
+		printf("\nTHE QUEUE IS EMPTY");
 	else{ 
 	temp=root;
 	root=root->link;
