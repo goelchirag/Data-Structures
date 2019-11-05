@@ -14,7 +14,7 @@ void insert()
 
 	temp=(struct node *)malloc(sizeof(struct node));
 
-	printf("\nenter the no. ");
+	printf("\nEnter the no. ");
 	scanf("%d",&temp->data);
 	temp->link=NULL;
 
@@ -42,7 +42,7 @@ p=root;
 
   if(p==NULL)
   {
-         printf("\nTHE LINKED LIST ID EMPTY\n");
+         printf("\nTHE STACK IS EMPTY\n");
   }
   else
   {
@@ -59,7 +59,7 @@ p=root;
 
 void delete(){
 	if(count==0)
-	printf("The list is empty");
+	printf("THE STACK IS EMPTY");
 	else if(count==1){
 	printf("\nDeleted %d",root->data);
 	free(root);
