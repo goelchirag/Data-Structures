@@ -78,7 +78,7 @@ p=root;
 
   if(p==NULL)
   {
-         printf("\nTHE LINKED LIST ID EMPTY\n");
+         printf("\nTHE LIST IS EMPTY\n");
   }
   else
   {
@@ -94,7 +94,7 @@ p=root;
 }
 void deletebeg(){
 	if(count==0)
-		printf("\n The list is empty");
+		printf("\nTHE LIST IS EMPTY");
 	else{ 
 	temp=root;
 	root=root->link;
