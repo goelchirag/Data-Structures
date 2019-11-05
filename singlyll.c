@@ -54,6 +54,7 @@ count++;
 void insertpos()
 {	 printf("Enter the position");
 	scanf("%d",&n);
+ 	if(n<=count){
 	if(n==1)
 	insertbeg();
 	else if(n==count)
@@ -70,6 +71,9 @@ void insertpos()
 	p->link=temp;
 	count++;	
 	}
+	}
+ 	else
+	printf("Wrong position");
 }
 void display()
 {
@@ -95,6 +99,11 @@ p=root;
 void deletebeg(){
 	if(count==0)
 		printf("\nTHE LIST IS EMPTY");
+	if(count==1){
+		printf("\n Deleted %d",root->data);
+		free(root);
+		count--;
+	}
 	else{ 
 	temp=root;
 	root=root->link;
@@ -127,6 +136,7 @@ void deleteend(){
 void deletepos(){
 	printf("\nEnter the postion");
 	scanf("%d",&n);
+	if(n<=count){
 	if(n==1)
 	deletebeg();
 	else if(n==count)
@@ -140,6 +150,9 @@ void deletepos(){
 	free(temp);
 	count--;
 	}
+	}
+	else
+	printf("Wrong input");
 }
 
 	
