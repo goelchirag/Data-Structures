@@ -57,6 +57,12 @@ p=root;
 void delete(){
 	if(count==0)
 		printf("\nTHE QUEUE IS EMPTY");
+	if(count==1)
+	{
+		printf("\n Deleted %d",root->data);
+		free(root);
+		count--;
+	}
 	else{ 
 	temp=root;
 	root=root->link;
